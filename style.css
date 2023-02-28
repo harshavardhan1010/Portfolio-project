@@ -1,0 +1,234 @@
+:root {
+  --primary-color: #fff;
+  --secondary-color: #37006e;
+  --third-color: #000;
+  --forth-color: #7c37c1;
+  /* 
+  --primary-color: #000;
+  --secondary-color: #ffa500;
+  --third--color: #fff;
+  --forth-color: #ffc455; */
+}
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: var(--third--color);
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+header {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background-color: var(--primary-color);
+  padding: 1em;
+  position: fixed;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+  width: 60vw;
+  justify-content: space-around;
+  color: var(--secondary-color);
+  padding: 1em;
+  font-weight: 600;
+}
+.logo {
+  width: 40vw;
+  font-weight: 900;
+  font-size: 2em;
+}
+nav li {
+  border-radius: 5px;
+  overflow: hidden;
+}
+.btn {
+  text-transform: capitalize;
+  padding: 0.5em;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  cursor: pointer;
+  border-radius: 5px;
+}
+.card .btn {
+  font-size: 0.9em;
+}
+.btn:active,
+.btn:hover {
+  background-color: var(--forth-color);
+}
+a {
+  text-decoration: none;
+}
+nav a {
+  color: var(--forth--color);
+  padding: 15px;
+}
+nav a:hover {
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+}
+body {
+  background-color: var(--primary-color);
+}
+.hero {
+  width: 80%;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.specialcolor {
+  color: var(--secondary-color);
+  text-transform: capitalize;
+}
+.hero > .intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  padding: 1em;
+}
+.intro-item,
+.intro p {
+  width: 100%;
+}
+.myimage {
+  width: 40%;
+}
+main {
+  width: 80%;
+  margin: 0 auto;
+}
+section {
+  margin: 3em auto;
+}
+h2 {
+  text-align: center;
+  font-size: 2em;
+  text-transform: capitalize;
+}
+.Skills,
+.projects {
+  display: flex;
+  padding: 1em;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.icon {
+  width: 70%;
+  max-width: 150px;
+  padding: 1em 0.5em 0;
+  margin: 10px;
+  border: 1px solid #b5b5b5;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.icon:hover,
+.card:hover {
+  box-shadow: 0 0 10px var(--third--color);
+  margin-top: -10px;
+  /* margin-bottom: -0px; */
+}
+img {
+  width: 100%;
+  height: auto;
+}
+.projects {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.card {
+  width: 90%;
+  max-width: 300px;
+  border: solid 1px;
+  border-radius: 15px;
+  transition: 0.5s;
+  margin: 1em;
+}
+.card-title {
+  padding: 0.5em;
+  text-transform: capitalize;
+}
+.card-info {
+  width: 100%;
+  display: flex;
+  padding: 0.4em;
+  justify-content: space-between;
+}
+.tools {
+  width: 40%;
+  display: flex;
+}
+.tool-icon {
+  width: 35%;
+}
+.card-link {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  text-transform: capitalize;
+}
+form {
+  width: 80%;
+  max-width: 800px;
+  border: solid 2px;
+  margin: 0 auto;
+}
+.form-items {
+  display: flex;
+  flex-direction: column;
+}
+.form-items input {
+  width: 100%;
+  display: block;
+  border: solid 2px var(--third-color);
+}
+@media screen and (max-width: 767px) {
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .hero {
+    margin: 0 auto;
+    justify-content: flex-start;
+    padding-top: 10em;
+    width: 100%;
+    font-size: 0.9em;
+  }
+  .hero h1 {
+    font-size: 1.9em;
+    width: 100%;
+  }
+  .intro {
+    width: 50%;
+  }
+}
+/* tab-media query */
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .hero {
+    justify-content: flex-start;
+    padding-top: 5em;
+    width: 100%;
+  }
+  .intro {
+    width: 50%;
+  }
+  .intro p {
+    font-size: 1em;
+    width: 100%;
+  }
+  .intro h1 {
+    font-size: 2em;
+    width: 100%;
+  }
+  .card {
+    max-width: 250px;
+  }
+}
